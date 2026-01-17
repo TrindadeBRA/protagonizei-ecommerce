@@ -5,33 +5,33 @@ import SidebarProfileNav from '@/src/components/SidebarProfileNav/SidebarProfile
 const products = [
   {
     id: 1,
-    name: 'Distant Mountains Artwork Tee',
-    price: '$36.00',
-    description: 'You awake in a new, mysterious land. Mist hangs low along the distant mountains. What does it mean?',
+    name: 'A Montanha Distante - Livro Personalizado',
+    price: 'R$ 36,00',
+    description: 'Você acorda em uma nova terra misteriosa. A névoa paira baixo sobre as montanhas distantes. O que isso significa?',
     address: ['Floyd Miles', '7363 Cynthia Pass', 'Toronto, ON N3Y 4H8'],
     email: 'f•••@example.com',
     phone: '1•••••••••40',
     href: '#',
-    status: 'Processing',
+    status: 'Processando',
     step: 1,
-    date: 'March 24, 2021',
+    date: '24 de março de 2021',
     datetime: '2021-03-24',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/confirmation-page-04-product-01.jpg',
     imageAlt: 'Off-white t-shirt with circular dot illustration on the front of mountain ridges that fade.',
   },
   {
     id: 2,
-    name: 'Rainfall Artwork Tee',
-    price: '$36.00',
+    name: 'A Chuva Mágica - Livro Personalizado',
+    price: 'R$ 36,00',
     description:
-      'A foreboding archway leads outside. Heavy rains descend upon the earth. Your destiny awaits. Hold up, are we still talking about t-shirts?',
+      'Um arco sombrio leva para fora. Chuvas pesadas caem sobre a terra. Seu destino aguarda. Uma história cheia de magia e aventura.',
     address: ['Floyd Miles', '7363 Cynthia Pass', 'Toronto, ON N3Y 4H8'],
     email: 'f•••@example.com',
     phone: '1•••••••••40',
     href: '#',
-    status: 'Shipped',
+    status: 'Enviado',
     step: 2,
-    date: 'March 23, 2021',
+    date: '23 de março de 2021',
     datetime: '2021-03-23',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/confirmation-page-04-product-02.jpg',
     imageAlt: 'Dark green t-shirt with arched gradient on the front that fades away.',
@@ -48,25 +48,25 @@ export default function MyOrdersPage() {
       <div className="mx-auto max-w-7xl pt-8 sm:pt-12 lg:flex lg:gap-x-16 px-4 sm:px-6 lg:px-8 bg-white">
         <SidebarProfileNav />
         <main className="flex-auto px-4 sm:px-6 lg:px-0">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Order Details</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Detalhes do Pedido</h1>
 
         <div className="mt-2 border-b border-gray-200 pb-5 text-sm sm:flex sm:justify-between">
           <dl className="flex">
-            <dt className="text-gray-500">Order number&nbsp;</dt>
+            <dt className="text-gray-500">Número do pedido&nbsp;</dt>
             <dd className="font-medium text-gray-900">W086438695</dd>
             <dt>
-              <span className="sr-only">Date</span>
+              <span className="sr-only">Data</span>
               <span aria-hidden="true" className="mx-2 text-gray-400">
                 &middot;
               </span>
             </dt>
             <dd className="font-medium text-gray-900">
-              <time dateTime="2021-03-22">March 22, 2021</time>
+              <time dateTime="2021-03-22">22 de março de 2021</time>
             </dd>
           </dl>
           <div className="mt-4 sm:mt-0">
             <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-              View invoice
+              Ver fatura
               <span aria-hidden="true"> &rarr;</span>
             </a>
           </div>
@@ -74,7 +74,7 @@ export default function MyOrdersPage() {
 
         <section aria-labelledby="products-heading" className="mt-8">
           <h2 id="products-heading" className="sr-only">
-            Products purchased
+            Produtos comprados
           </h2>
 
           <div className="space-y-24">
@@ -100,7 +100,7 @@ export default function MyOrdersPage() {
                 <div className="sm:col-span-12 md:col-span-7">
                   <dl className="grid grid-cols-1 gap-y-8 border-b border-gray-200 py-8 sm:grid-cols-2 sm:gap-x-6 sm:py-6 md:py-10">
                     <div>
-                      <dt className="font-medium text-gray-900">Delivery address</dt>
+                      <dt className="font-medium text-gray-900">Endereço de entrega</dt>
                       <dd className="mt-3 text-gray-500">
                         <span className="block">{product.address[0]}</span>
                         <span className="block">{product.address[1]}</span>
@@ -108,12 +108,12 @@ export default function MyOrdersPage() {
                       </dd>
                     </div>
                     <div>
-                      <dt className="font-medium text-gray-900">Shipping updates</dt>
+                      <dt className="font-medium text-gray-900">Atualizações de entrega</dt>
                       <dd className="mt-3 space-y-3 text-gray-500">
                         <p>{product.email}</p>
                         <p>{product.phone}</p>
                         <button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
-                          Edit
+                          Editar
                         </button>
                       </dd>
                     </div>
@@ -129,15 +129,15 @@ export default function MyOrdersPage() {
                       />
                     </div>
                     <div className="mt-6 hidden grid-cols-4 font-medium text-gray-600 sm:grid">
-                      <div className="text-indigo-600">Order placed</div>
+                      <div className="text-indigo-600">Pedido realizado</div>
                       <div className={classNames(product.step > 0 ? 'text-indigo-600' : '', 'text-center')}>
-                        Processing
+                        Processando
                       </div>
                       <div className={classNames(product.step > 1 ? 'text-indigo-600' : '', 'text-center')}>
-                        Shipped
+                        Enviado
                       </div>
                       <div className={classNames(product.step > 2 ? 'text-indigo-600' : '', 'text-right')}>
-                        Delivered
+                        Entregue
                       </div>
                     </div>
                   </div>
@@ -152,13 +152,13 @@ export default function MyOrdersPage() {
       {/* Billing */}
       <section aria-labelledby="summary-heading" className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
         <h2 id="summary-heading" className="sr-only">
-          Billing Summary
+          Resumo de Faturamento
         </h2>
 
         <div className="rounded-lg bg-gray-50 px-6 py-6 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-0 lg:py-8">
           <dl className="grid grid-cols-1 gap-6 text-sm sm:grid-cols-2 md:gap-x-8 lg:col-span-5 lg:pl-8">
             <div>
-              <dt className="font-medium text-gray-900">Billing address</dt>
+              <dt className="font-medium text-gray-900">Endereço de cobrança</dt>
               <dd className="mt-3 text-gray-500">
                 <span className="block">Floyd Miles</span>
                 <span className="block">7363 Cynthia Pass</span>
@@ -166,7 +166,7 @@ export default function MyOrdersPage() {
               </dd>
             </div>
             <div>
-              <dt className="font-medium text-gray-900">Payment information</dt>
+              <dt className="font-medium text-gray-900">Informações de pagamento</dt>
               <dd className="mt-3 flex">
                 <div>
                   <svg width={36} height={24} viewBox="0 0 36 24" aria-hidden="true" className="h-6 w-auto">
@@ -179,8 +179,8 @@ export default function MyOrdersPage() {
                   <p className="sr-only">Visa</p>
                 </div>
                 <div className="ml-4">
-                  <p className="text-gray-900">Ending with 4242</p>
-                  <p className="text-gray-600">Expires 02 / 24</p>
+                  <p className="text-gray-900">Terminado em 4242</p>
+                  <p className="text-gray-600">Válido até 02 / 24</p>
                 </div>
               </dd>
             </div>
@@ -189,19 +189,19 @@ export default function MyOrdersPage() {
           <dl className="mt-8 divide-y divide-gray-200 text-sm lg:col-span-7 lg:mt-0 lg:pr-8">
             <div className="flex items-center justify-between pb-4">
               <dt className="text-gray-600">Subtotal</dt>
-              <dd className="font-medium text-gray-900">$72</dd>
+              <dd className="font-medium text-gray-900">R$ 72</dd>
             </div>
             <div className="flex items-center justify-between py-4">
-              <dt className="text-gray-600">Shipping</dt>
-              <dd className="font-medium text-gray-900">$5</dd>
+              <dt className="text-gray-600">Frete</dt>
+              <dd className="font-medium text-gray-900">R$ 5</dd>
             </div>
             <div className="flex items-center justify-between py-4">
-              <dt className="text-gray-600">Tax</dt>
-              <dd className="font-medium text-gray-900">$6.16</dd>
+              <dt className="text-gray-600">Impostos</dt>
+              <dd className="font-medium text-gray-900">R$ 6,16</dd>
             </div>
             <div className="flex items-center justify-between pt-4">
-              <dt className="font-medium text-gray-900">Order total</dt>
-              <dd className="font-medium text-indigo-600">$83.16</dd>
+              <dt className="font-medium text-gray-900">Total do pedido</dt>
+              <dd className="font-medium text-indigo-600">R$ 83,16</dd>
             </div>
           </dl>
         </div>

@@ -113,7 +113,7 @@ export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
                   className="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
                 >
                   <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Close menu</span>
+                  <span className="sr-only">Fechar menu</span>
                   <XMarkIcon aria-hidden="true" className="size-6" />
                 </button>
               </div>
@@ -181,7 +181,7 @@ export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
                   onClick={() => setOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Entrar
                 </Link>
               </div>
             </DialogPanel>
@@ -262,13 +262,13 @@ export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
                     onClick={() => setOpen(true)}
                     className="-ml-2 rounded-md bg-white p-2 text-gray-400"
                   >
-                    <span className="sr-only">Open menu</span>
+                    <span className="sr-only">Abrir menu</span>
                     <Bars3Icon aria-hidden="true" className="size-6" />
                   </button>
 
                   {/* Search */}
                   <Link href="#" className="ml-2 p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
+                    <span className="sr-only">Pesquisar</span>
                     <MagnifyingGlassIcon aria-hidden="true" className="size-6" />
                   </Link>
                 </div>
@@ -288,14 +288,14 @@ export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
                     <div className="flex space-x-8">
                       <div className="hidden lg:flex">
                         <Link href="#" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Search</span>
+                          <span className="sr-only">Pesquisar</span>
                           <MagnifyingGlassIcon aria-hidden="true" className="size-6" />
                         </Link>
                       </div>
 
                       <div className="flex">
                         <Link href="/login" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Log in</span>
+                          <span className="sr-only">Entrar</span>
                           <UserIcon aria-hidden="true" className="size-6" />
                         </Link>
                       </div>
@@ -314,7 +314,7 @@ export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
                           className="size-6 shrink-0 text-gray-400 group-hover:text-gray-500"
                         />
                         <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
-                        <span className="sr-only">items in cart, view bag</span>
+                        <span className="sr-only">itens no carrinho, ver sacola</span>
                       </button>
                     </div>
                   </div>

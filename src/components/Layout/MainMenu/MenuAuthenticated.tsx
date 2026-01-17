@@ -24,65 +24,65 @@ const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const navigation = {
   categories: [
     {
-      name: 'Women',
+      name: 'Para Meninas',
       featured: [
-        { name: 'Sleep', href: '#' },
-        { name: 'Swimwear', href: '#' },
-        { name: 'Underwear', href: '#' },
+        { name: 'Princesas', href: '#' },
+        { name: 'Fadas', href: '#' },
+        { name: 'Aventuras', href: '#' },
       ],
       collection: [
-        { name: 'Everything', href: '#' },
-        { name: 'Core', href: '#' },
-        { name: 'New Arrivals', href: '#' },
-        { name: 'Sale', href: '#' },
+        { name: 'Todas as Histórias', href: '#' },
+        { name: 'Clássicos', href: '#' },
+        { name: 'Novos Lançamentos', href: '#' },
+        { name: 'Promoção', href: '#' },
       ],
       categories: [
-        { name: 'Basic Tees', href: '#' },
-        { name: 'Artwork Tees', href: '#' },
-        { name: 'Bottoms', href: '#' },
-        { name: 'Underwear', href: '#' },
-        { name: 'Accessories', href: '#' },
+        { name: 'Aventura', href: '#' },
+        { name: 'Fantasia', href: '#' },
+        { name: 'Educativo', href: '#' },
+        { name: 'Clássicos', href: '#' },
+        { name: 'Moderna', href: '#' },
       ],
       brands: [
-        { name: 'Full Nelson', href: '#' },
-        { name: 'My Way', href: '#' },
-        { name: 'Re-Arranged', href: '#' },
-        { name: 'Counterfeit', href: '#' },
-        { name: 'Significant Other', href: '#' },
+        { name: 'Aventura', href: '#' },
+        { name: 'Fantasia', href: '#' },
+        { name: 'Educativo', href: '#' },
+        { name: 'Clássicos', href: '#' },
+        { name: 'Modernos', href: '#' },
       ],
     },
     {
-      name: 'Men',
+      name: 'Para Meninos',
       featured: [
-        { name: 'Casual', href: '#' },
-        { name: 'Boxers', href: '#' },
-        { name: 'Outdoor', href: '#' },
+        { name: 'Heróis', href: '#' },
+        { name: 'Aventuras', href: '#' },
+        { name: 'Ação', href: '#' },
       ],
       collection: [
-        { name: 'Everything', href: '#' },
-        { name: 'Core', href: '#' },
-        { name: 'New Arrivals', href: '#' },
-        { name: 'Sale', href: '#' },
+        { name: 'Todas as Histórias', href: '#' },
+        { name: 'Clássicos', href: '#' },
+        { name: 'Novos Lançamentos', href: '#' },
+        { name: 'Promoção', href: '#' },
       ],
       categories: [
-        { name: 'Artwork Tees', href: '#' },
-        { name: 'Pants', href: '#' },
-        { name: 'Accessories', href: '#' },
-        { name: 'Boxers', href: '#' },
-        { name: 'Basic Tees', href: '#' },
+        { name: 'Aventura', href: '#' },
+        { name: 'Ação', href: '#' },
+        { name: 'Espaço', href: '#' },
+        { name: 'Dinossauros', href: '#' },
+        { name: 'Super-heróis', href: '#' },
       ],
       brands: [
-        { name: 'Significant Other', href: '#' },
-        { name: 'My Way', href: '#' },
-        { name: 'Counterfeit', href: '#' },
-        { name: 'Re-Arranged', href: '#' },
-        { name: 'Full Nelson', href: '#' },
+        { name: 'Aventura', href: '#' },
+        { name: 'Ação', href: '#' },
+        { name: 'Educativo', href: '#' },
+        { name: 'Clássicos', href: '#' },
+        { name: 'Modernos', href: '#' },
       ],
     },
   ],
   pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
+    { name: 'Sobre', href: '#' },
+    { name: 'Contato', href: '#' },
   ],
 }
 
@@ -130,7 +130,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                 <select
                   id="desktop-currency"
                   name="currency"
-                  aria-label="Currency"
+                  aria-label="Moeda"
                   className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-transparent py-0.5 pl-2 pr-7 text-left text-base font-medium text-gray-900 focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-gray-900 sm:text-sm/6"
                 >
                   {currencies.map((currency) => (
@@ -187,7 +187,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                   className="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
                 >
                   <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Close menu</span>
+                  <span className="sr-only">Fechar menu</span>
                   <XMarkIcon aria-hidden="true" className="size-6" />
                 </button>
               </div>
@@ -213,7 +213,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                         <div className="grid grid-cols-1 gap-x-6 gap-y-10">
                           <div>
                             <p id={`mobile-featured-heading-${categoryIdx}`} className="font-medium text-gray-900">
-                              Featured
+                              Destaques
                             </p>
                             <ul
                               role="list"
@@ -231,7 +231,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                           </div>
                           <div>
                             <p id="mobile-categories-heading" className="font-medium text-gray-900">
-                              Categories
+                              Categorias
                             </p>
                             <ul role="list" aria-labelledby="mobile-categories-heading" className="mt-6 space-y-6">
                               {category.categories.map((item) => (
@@ -247,7 +247,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                         <div className="grid grid-cols-1 gap-x-6 gap-y-10">
                           <div>
                             <p id="mobile-collection-heading" className="font-medium text-gray-900">
-                              Collection
+                              Coleções
                             </p>
                             <ul role="list" aria-labelledby="mobile-collection-heading" className="mt-6 space-y-6">
                               {category.collection.map((item) => (
@@ -262,7 +262,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
 
                           <div>
                             <p id="mobile-brand-heading" className="font-medium text-gray-900">
-                              Brands
+                              Temas
                             </p>
                             <ul role="list" aria-labelledby="mobile-brand-heading" className="mt-6 space-y-6">
                               {category.brands.map((item) => (
@@ -460,13 +460,13 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                     onClick={() => setOpen(true)}
                     className="-ml-2 rounded-md bg-white p-2 text-gray-400"
                   >
-                    <span className="sr-only">Open menu</span>
+                    <span className="sr-only">Abrir menu</span>
                     <Bars3Icon aria-hidden="true" className="size-6" />
                   </button>
 
                   {/* Search */}
                   <Link href="#" className="ml-2 p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
+                    <span className="sr-only">Pesquisar</span>
                     <MagnifyingGlassIcon aria-hidden="true" className="size-6" />
                   </Link>
                 </div>
@@ -486,14 +486,14 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                     <div className="flex space-x-8">
                       <div className="hidden lg:flex">
                         <Link href="#" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Search</span>
+                          <span className="sr-only">Pesquisar</span>
                           <MagnifyingGlassIcon aria-hidden="true" className="size-6" />
                         </Link>
                       </div>
 
                       <div className="flex">
                         <Link href="/profile" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Account</span>
+                          <span className="sr-only">Conta</span>
                           <UserIcon aria-hidden="true" className="size-6" />
                         </Link>
                       </div>
@@ -512,7 +512,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                           className="size-6 shrink-0 text-gray-400 group-hover:text-gray-500"
                         />
                         <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
-                        <span className="sr-only">items in cart, view bag</span>
+                        <span className="sr-only">itens no carrinho, ver sacola</span>
                       </button>
                     </div>
                   </div>

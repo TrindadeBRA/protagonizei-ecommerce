@@ -9,37 +9,37 @@ import { useCart } from '@/src/hooks/useCart'
 const products = [
   {
     id: 1,
-    name: 'Artwork Tee',
+    name: 'Livro Personalizado - Aventura',
     href: '/product/slug-example',
-    price: '$32.00',
-    color: 'Mint',
-    size: 'Medium',
+    price: 'R$ 49,90',
+    color: 'Aventura',
+    size: 'Médio',
     inStock: true,
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/checkout-page-03-product-04.jpg',
-    imageAlt: 'Front of mint cotton t-shirt with wavey lines pattern.',
+    imageAlt: 'Livro personalizado de aventura para crianças.',
   },
   {
     id: 2,
-    name: 'Basic Tee',
+    name: 'Livro Personalizado - Fantasia',
     href: '/product/slug-example',
-    price: '$32.00',
-    color: 'Charcoal',
+    price: 'R$ 49,90',
+    color: 'Fantasia',
     inStock: false,
-    leadTime: '7-8 years',
-    size: 'Large',
+    leadTime: '7-8 dias',
+    size: 'Grande',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-01-product-02.jpg',
-    imageAlt: 'Front of charcoal cotton t-shirt.',
+    imageAlt: 'Livro personalizado de fantasia para crianças.',
   },
   {
     id: 3,
-    name: 'Basic Tee',
+    name: 'Livro Personalizado - Educativo',
     href: '/product/slug-example',
-    price: '$32.00',
-    color: 'Sienna',
+    price: 'R$ 49,90',
+    color: 'Educativo',
     inStock: true,
-    size: 'Large',
+    size: 'Grande',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-01-product-01.jpg',
-    imageAlt: 'Front of sienna cotton t-shirt.',
+    imageAlt: 'Livro personalizado educativo para crianças.',
   },
 ]
 
@@ -63,7 +63,7 @@ export default function CartDrawer() {
               <div className="flex h-full flex-col overflow-y-auto bg-white shadow-xl">
                 <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
                   <div className="flex items-start justify-between">
-                    <DialogTitle className="text-lg font-medium text-gray-900">Shopping cart</DialogTitle>
+                    <DialogTitle className="text-lg font-medium text-gray-900">Carrinho de compras</DialogTitle>
                     <div className="ml-3 flex h-7 items-center">
                       <button
                         type="button"
@@ -71,7 +71,7 @@ export default function CartDrawer() {
                         className="relative -m-2 p-2 text-gray-400 hover:text-gray-500"
                       >
                         <span className="absolute -inset-0.5" />
-                        <span className="sr-only">Close panel</span>
+                        <span className="sr-only">Fechar painel</span>
                         <XMarkIcon aria-hidden="true" className="size-6" />
                       </button>
                     </div>
@@ -104,12 +104,12 @@ export default function CartDrawer() {
                                   ) : (
                                     <ClockIcon aria-hidden="true" className="size-5 shrink-0 text-gray-300" />
                                   )}
-                                  <span>{product.inStock ? 'In stock' : `Will ship in ${product.leadTime}`}</span>
+                                  <span>{product.inStock ? 'Em estoque' : `Enviará em ${product.leadTime}`}</span>
                                 </p>
 
                                 <div className="flex">
                                   <button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                    Remove
+                                    Remover
                                   </button>
                                 </div>
                               </div>
@@ -124,27 +124,27 @@ export default function CartDrawer() {
                 <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                   <div className="flex justify-between text-base font-medium text-gray-900">
                     <p>Subtotal</p>
-                    <p>$96.00</p>
+                    <p>R$ 96,00</p>
                   </div>
-                  <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+                  <p className="mt-0.5 text-sm text-gray-500">Frete e impostos calculados no checkout.</p>
                   <div className="mt-6">
                     <Link
                       href="/cart/checkout"
                       onClick={close}
                       className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                     >
-                      Checkout
+                      Finalizar Pedido
                     </Link>
                   </div>
                   <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                     <p>
-                      or{' '}
+                      ou{' '}
                       <button
                         type="button"
                         onClick={close}
                         className="font-medium text-indigo-600 hover:text-indigo-500"
                       >
-                        Continue Shopping
+                        Continuar Comprando
                         <span aria-hidden="true"> &rarr;</span>
                       </button>
                     </p>

@@ -19,11 +19,11 @@ export default function LoginPage() {
                                     src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
                                     className="h-10 w-auto"
                                 />
-                                <h2 className="mt-8 text-2xl/9 font-bold tracking-tight text-gray-900">Sign in to your account</h2>
+                                <h2 className="mt-8 text-2xl/9 font-bold tracking-tight text-gray-900">Entre na sua conta</h2>
                                 <p className="mt-2 text-sm/6 text-gray-500">
-                                    Not a member?{' '}
+                                    Ainda não tem conta?{' '}
                                     <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                        Start a 14 day free trial
+                                        Criar conta gratuita
                                     </a>
                                 </p>
                             </div>
@@ -33,7 +33,7 @@ export default function LoginPage() {
                                     <form action="#" method="POST" className="space-y-6">
                                         <div>
                                             <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
-                                                Email address
+                                                E-mail
                                             </label>
                                             <div className="mt-2">
                                                 <input
@@ -49,7 +49,7 @@ export default function LoginPage() {
 
                                         <div>
                                             <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
-                                                Password
+                                                Senha
                                             </label>
                                             <div className="mt-2">
                                                 <input
@@ -96,13 +96,13 @@ export default function LoginPage() {
                                                     </div>
                                                 </div>
                                                 <label htmlFor="remember-me" className="block text-sm/6 text-gray-900">
-                                                    Remember me
+                                                    Lembrar-me
                                                 </label>
                                             </div>
 
                                             <div className="text-sm/6">
                                                 <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                                    Forgot password?
+                                                    Esqueceu a senha?
                                                 </a>
                                             </div>
                                         </div>
@@ -112,7 +112,7 @@ export default function LoginPage() {
                                                 type="submit"
                                                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                             >
-                                                Sign in
+                                                Entrar
                                             </button>
                                         </div>
                                     </form>
@@ -124,7 +124,7 @@ export default function LoginPage() {
                                             <div className="w-full border-t border-gray-200" />
                                         </div>
                                         <div className="relative flex justify-center text-sm/6 font-medium">
-                                            <span className="bg-white px-6 text-gray-900">Or continue with</span>
+                                            <span className="bg-white px-6 text-gray-900">Ou continue com</span>
                                         </div>
                                     </div>
 

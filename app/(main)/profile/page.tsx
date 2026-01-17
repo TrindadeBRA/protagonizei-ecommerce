@@ -96,32 +96,32 @@ export default function ProfilePage() {
             </div>
 
             <div>
-              <h2 className="text-base/7 font-semibold text-gray-900">Language and dates</h2>
+              <h2 className="text-base/7 font-semibold text-gray-900">Idioma e datas</h2>
               <p className="mt-1 text-sm/6 text-gray-500">
-                Choose what language and date format to use throughout your account.
+                Escolha qual idioma e formato de data usar em toda a sua conta.
               </p>
 
               <dl className="mt-6 divide-y divide-gray-100 border-t border-gray-200 text-sm/6">
                 <div className="py-6 sm:flex">
-                  <dt className="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Language</dt>
+                  <dt className="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Idioma</dt>
                   <dd className="mt-1 flex justify-between gap-x-6 sm:mt-0 sm:flex-auto">
-                    <div className="text-gray-900">English</div>
+                    <div className="text-gray-900">Português</div>
                     <button type="button" className="font-semibold text-indigo-600 hover:text-indigo-500">
                       Atualizar
                     </button>
                   </dd>
                 </div>
                 <div className="py-6 sm:flex">
-                  <dt className="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Date format</dt>
+                  <dt className="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Formato de data</dt>
                   <dd className="mt-1 flex justify-between gap-x-6 sm:mt-0 sm:flex-auto">
-                    <div className="text-gray-900">DD-MM-YYYY</div>
+                    <div className="text-gray-900">DD-MM-AAAA</div>
                     <button type="button" className="font-semibold text-indigo-600 hover:text-indigo-500">
                       Atualizar
                     </button>
                   </dd>
                 </div>
                 <div className="flex pt-6">
-                  <dt className="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Automatic timezone</dt>
+                  <dt className="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Fuso horário automático</dt>
                   <dd className="flex flex-auto items-center justify-end">
                     <div className="group relative inline-flex w-8 shrink-0 rounded-full bg-gray-200 p-px outline-offset-2 outline-indigo-600 ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out has-[:checked]:bg-indigo-600 has-[:focus-visible]:outline has-[:focus-visible]:outline-2">
                       <span className="size-4 rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition-transform duration-200 ease-in-out group-has-[:checked]:translate-x-3.5" />

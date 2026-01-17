@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Detalhes do Produto | Protagonizei",
     description: "Veja todos os detalhes, especificações e avaliações do produto na Protagonizei.",
-    type: "product",
+    type: "website",
   },
 };
 
