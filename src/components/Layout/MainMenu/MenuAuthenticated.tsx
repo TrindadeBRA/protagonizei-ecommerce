@@ -321,15 +321,15 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
         <div className="bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="border-b border-gray-200">
-              <div className="flex h-16 items-center justify-between">
+              <div className="flex h-24 items-center justify-between">
                 {/* Logo (lg+) */}
                 <div className="hidden lg:flex lg:items-center">
                   <Link href="/">
                     <span className="sr-only">Protagonizei</span>
                     <img
-                      alt=""
-                      src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                      className="h-8 w-auto"
+                      alt="Protagonizei"
+                      src="/assets/logo black.svg"
+                      className="h-20 w-auto"
                     />
                   </Link>
                 </div>
@@ -475,8 +475,8 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                 <Link href="/" className="lg:hidden">
                   <span className="sr-only">Protagonizei</span>
                   <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                    alt="Protagonizei"
+                    src="/assets/logo black.svg"
                     className="h-8 w-auto"
                   />
                 </Link>
