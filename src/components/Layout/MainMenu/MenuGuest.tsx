@@ -16,18 +16,19 @@ import {
 import {
   Bars3Icon,
   ShoppingBagIcon,
+  ShoppingCartIcon,
   UserIcon,
   XMarkIcon,
   HomeIcon,
   CheckCircleIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { useCart } from '@/src/hooks/useCart'
 
 const navigation = {
   main: [
     { name: 'Home', href: '/', icon: HomeIcon },
     { name: 'Produtos', href: '/product', icon: ShoppingBagIcon },
-    { name: 'Carrinho', href: '/cart', icon: ShoppingBagIcon },
   ],
   account: [
     { name: 'Perfil', href: '/profile', icon: UserIcon },
@@ -41,6 +42,7 @@ interface MenuGuestProps {
 
 export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { open: openCart } = useCart()
 
   return (
     <header className="bg-white">
@@ -106,6 +108,16 @@ export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-4">
           <button
+            type="button"
+            onClick={openCart}
+            className="-m-2 p-2 text-gray-400 hover:text-gray-500"
+            title="Carrinho"
+          >
+            <span className="sr-only">Carrinho</span>
+            <ShoppingCartIcon aria-hidden="true" className="size-6" />
+            <span className="ml-2 text-sm font-medium text-gray-700">0</span>
+          </button>
+          <button
             onClick={onToggleAuth}
             className="-m-2 p-2 text-gray-400 hover:text-gray-500"
             title="Modo Autenticado"
@@ -153,6 +165,17 @@ export default function MenuGuest({ onToggleAuth }: MenuGuestProps) {
                     {item.name}
                   </Link>
                 ))}
+                <button
+                  type="button"
+                  onClick={() => {
+                    openCart()
+                    setMobileMenuOpen(false)
+                  }}
+                  className="-mx-3 flex items-center gap-x-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  <ShoppingCartIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
+                  Carrinho
+                </button>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     Minha Conta

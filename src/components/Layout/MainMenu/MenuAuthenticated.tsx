@@ -18,6 +18,7 @@ import {
 } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon, XMarkIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { useCart } from '@/src/hooks/useCart'
 
 const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const navigation = {
@@ -91,6 +92,7 @@ interface MenuAuthenticatedProps {
 
 export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedProps) {
   const [open, setOpen] = useState(false)
+  const { open: openCart } = useCart()
 
   return (
     <header className="relative">
@@ -264,7 +266,18 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                   </div>
                 ))}
               </div>
-              <div className="border-t border-gray-200 px-4 py-6">
+              <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                <button
+                  type="button"
+                  onClick={() => {
+                    openCart()
+                    setOpen(false)
+                  }}
+                  className="-mx-3 flex items-center gap-x-3 rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  <ShoppingCartIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
+                  Carrinho
+                </button>
                 <button
                   onClick={() => {
                     onToggleAuth()
@@ -465,14 +478,18 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                     <span aria-hidden="true" className="mx-4 h-6 w-px bg-gray-200 lg:mx-6" />
 
                     <div className="flow-root">
-                      <Link href="/cart" className="group -m-2 flex items-center p-2">
+                      <button
+                        type="button"
+                        onClick={openCart}
+                        className="group -m-2 flex items-center p-2"
+                      >
                         <ShoppingCartIcon
                           aria-hidden="true"
                           className="size-6 shrink-0 text-gray-400 group-hover:text-gray-500"
                         />
                         <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                         <span className="sr-only">items in cart, view bag</span>
-                      </Link>
+                      </button>
                     </div>
                   </div>
                 </div>

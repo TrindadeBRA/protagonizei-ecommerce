@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import MainMenu from "@/src/components/Layout/MainMenu/MainMenu";
 import Footer from "@/src/components/Layout/Footer/Footer";
+import CartProvider from "@/src/hooks/useCart";
+import CartDrawer from "@/src/components/Cart/CartDrawer";
 
 export const metadata: Metadata = {
   title: "Início",
@@ -13,11 +15,12 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <CartProvider>
       <MainMenu />
       {children}
       <Footer />
-    </>
+      <CartDrawer />
+    </CartProvider>
   );
 }
 
