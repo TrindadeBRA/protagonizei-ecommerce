@@ -98,7 +98,31 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
     <header className="relative">
       <nav aria-label="Top">
         {/* Top navigation */}
-        <div className="bg-gray-900">
+        <div className="relative isolate overflow-hidden bg-gray-50">
+          <div
+            aria-hidden="true"
+            className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          >
+            <div
+              style={{
+                clipPath:
+                  'polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)',
+              }}
+              className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            />
+          </div>
+          <div
+            aria-hidden="true"
+            className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+          >
+            <div
+              style={{
+                clipPath:
+                  'polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)',
+              }}
+              className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+            />
+          </div>
           <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
             {/* Currency selector */}
             <form className="hidden lg:block lg:flex-1">
@@ -107,38 +131,38 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
                   id="desktop-currency"
                   name="currency"
                   aria-label="Currency"
-                  className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-gray-900 py-0.5 pl-2 pr-7 text-left text-base font-medium text-white focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-white sm:text-sm/6"
+                  className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-transparent py-0.5 pl-2 pr-7 text-left text-base font-medium text-gray-900 focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-gray-900 sm:text-sm/6"
                 >
                   {currencies.map((currency) => (
-                    <option key={currency}>{currency}</option>
+                    <option key={currency} className="bg-white text-gray-900">{currency}</option>
                   ))}
                 </select>
                 <ChevronDownIcon
                   aria-hidden="true"
-                  className="pointer-events-none col-start-1 row-start-1 mr-1 size-5 self-center justify-self-end fill-gray-300"
+                  className="pointer-events-none col-start-1 row-start-1 mr-1 size-5 self-center justify-self-end fill-gray-400"
                 />
               </div>
             </form>
 
-            <p className="flex-1 text-center text-sm font-medium text-white lg:flex-none">
+            <p className="flex-1 text-center text-sm font-medium text-gray-900 lg:flex-none">
               Get free delivery on orders over $100
             </p>
 
             <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
               <button
                 onClick={onToggleAuth}
-                className="-m-1 p-1 text-gray-400 hover:text-gray-300"
+                className="-m-1 mr-2 p-1 text-gray-400 hover:text-gray-500"
                 title="Modo Visitante"
               >
                 <span className="sr-only">Modo Visitante</span>
                 <ArrowRightOnRectangleIcon aria-hidden="true" className="size-5" />
               </button>
-              <span aria-hidden="true" className="h-6 w-px bg-gray-600" />
-              <Link href="/profile" className="text-sm font-medium text-white hover:text-gray-100">
+              <span aria-hidden="true" className="h-6 w-px bg-gray-300" />
+              <Link href="/profile" className="text-sm font-medium text-gray-900 hover:text-gray-700">
                 Minha Conta
               </Link>
-              <span aria-hidden="true" className="h-6 w-px bg-gray-600" />
-              <Link href="/profile/my-orders" className="text-sm font-medium text-white hover:text-gray-100">
+              <span aria-hidden="true" className="h-6 w-px bg-gray-300" />
+              <Link href="/profile/my-orders" className="text-sm font-medium text-gray-900 hover:text-gray-700">
                 Meus Pedidos
               </Link>
             </div>
