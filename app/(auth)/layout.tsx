@@ -1,26 +1,24 @@
-'use client'
-
 import type { Metadata } from "next";
-import { useEffect } from 'react'
+
+export const metadata: Metadata = {
+  title: "Login",
+  description: "Faça login na sua conta Protagonizei para acessar seus pedidos, favoritos e benefícios exclusivos.",
+  openGraph: {
+    title: "Login | Protagonizei",
+    description: "Faça login na sua conta Protagonizei para acessar seus pedidos e favoritos.",
+    type: "website",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function AuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {
-    // Esconde MainMenu e Footer nas rotas de auth
-    const menu = document.querySelector('header')
-    const footer = document.querySelector('footer')
-    if (menu) menu.style.display = 'none'
-    if (footer) footer.style.display = 'none'
-    
-    return () => {
-      if (menu) menu.style.display = ''
-      if (footer) footer.style.display = ''
-    }
-  }, [])
-
   return <>{children}</>;
 }
 
