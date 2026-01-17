@@ -25,10 +25,10 @@ function classNames(...classes: string[]) {
 export default function Example() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl pt-16 lg:flex lg:gap-x-16 lg:px-8 bg-white">
+      <div className="mx-auto max-w-7xl pt-8 sm:pt-12 lg:flex lg:gap-x-16 px-4 sm:px-6 lg:px-8 bg-white">
         <h1 className="sr-only">General Settings</h1>
 
-        <aside className="flex overflow-x-auto border-b border-gray-900/5 py-4 lg:block lg:w-64 lg:flex-none lg:border-0 lg:py-20">
+        <aside className="flex overflow-x-auto border-b border-gray-900/5 py-4 lg:block lg:w-64 lg:flex-none lg:border-0">
           <nav className="flex-none px-4 sm:px-6 lg:px-0">
             <ul role="list" className="flex gap-x-3 gap-y-1 whitespace-nowrap lg:flex-col">
               {secondaryNavigation.map((item) => (
@@ -57,7 +57,7 @@ export default function Example() {
           </nav>
         </aside>
 
-        <main className="px-4 py-16 sm:px-6 lg:flex-auto lg:px-0 lg:py-20">
+        <main className="px-4 sm:px-6 lg:flex-auto lg:px-0">
           <div className="mx-auto max-w-2xl space-y-16 sm:space-y-20 lg:mx-0 lg:max-w-none">
             <div>
               <h2 className="text-base/7 font-semibold text-gray-900">Profile</h2>

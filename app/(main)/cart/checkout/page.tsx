@@ -417,7 +417,7 @@ export default function Example() {
         </nav>
       </header>
 
-      <main className="mx-auto max-w-7xl px-4 pb-24 pt-16 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 pt-8 pb-24 sm:px-6 sm:pt-12 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <h1 className="sr-only">Checkout</h1>
 

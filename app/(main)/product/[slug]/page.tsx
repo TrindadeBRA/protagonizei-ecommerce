@@ -140,9 +140,9 @@ function classNames(...classes: string[]) {
 export default function Example() {
   return (
     <div className="bg-white">
-      <main className="pt-10 sm:pt-16">
+      <main className="pt-8 sm:pt-12">
         <nav aria-label="Breadcrumb">
-          <ol role="list" className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+          <ol role="list" className="mx-auto flex max-w-7xl items-center space-x-2 px-4 sm:px-6 lg:px-8">
             {product.breadcrumbs.map((breadcrumb) => (
               <li key={breadcrumb.id}>
                 <div className="flex items-center">
@@ -171,7 +171,7 @@ export default function Example() {
         </nav>
 
         {/* Image gallery */}
-        <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
+        <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-8 lg:px-8">
           <img
             alt={product.images[0].alt}
             src={product.images[0].src}
@@ -195,7 +195,7 @@ export default function Example() {
         </div>
 
         {/* Product info */}
-        <div className="mx-auto max-w-2xl px-4 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8">
           <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{product.name}</h1>
           </div>
@@ -381,7 +381,7 @@ export default function Example() {
           </div>
         </div>
         <section aria-labelledby="related-products-heading" className="bg-white">
-          <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
             <h2 id="related-products-heading" className="text-xl font-bold tracking-tight text-gray-900">
               Customers also purchased
             </h2>

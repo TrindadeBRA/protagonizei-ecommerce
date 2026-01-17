@@ -43,7 +43,7 @@ function classNames(...classes: string[]) {
 export default function Example() {
   return (
     <div className="bg-white">
-      <main className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 pt-8 pb-16 sm:px-6 sm:pt-12 sm:pb-24 lg:px-8">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">Order Details</h1>
 
         <div className="mt-2 border-b border-gray-200 pb-5 text-sm sm:flex sm:justify-between">
