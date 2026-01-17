@@ -1,61 +1,14 @@
 'use client'
 
-import {
-  BellIcon,
-  CreditCardIcon,
-  CubeIcon,
-  FingerPrintIcon,
-  UserCircleIcon,
-  UsersIcon,
-} from '@heroicons/react/24/outline'
+import SidebarProfileNav from '@/src/components/SidebarProfileNav/SidebarProfileNav'
 
-const secondaryNavigation = [
-  { name: 'General', href: '#', icon: UserCircleIcon, current: true },
-  { name: 'Security', href: '#', icon: FingerPrintIcon, current: false },
-  { name: 'Notifications', href: '#', icon: BellIcon, current: false },
-  { name: 'Plan', href: '#', icon: CubeIcon, current: false },
-  { name: 'Billing', href: '#', icon: CreditCardIcon, current: false },
-  { name: 'Team members', href: '#', icon: UsersIcon, current: false },
-]
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
-
-export default function Example() {
+export default function ProfilePage() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl pt-8 sm:pt-12 lg:flex lg:gap-x-16 px-4 sm:px-6 lg:px-8 bg-white">
         <h1 className="sr-only">General Settings</h1>
 
-        <aside className="flex overflow-x-auto border-b border-gray-900/5 py-4 lg:block lg:w-64 lg:flex-none lg:border-0">
-          <nav className="flex-none px-4 sm:px-6 lg:px-0">
-            <ul role="list" className="flex gap-x-3 gap-y-1 whitespace-nowrap lg:flex-col">
-              {secondaryNavigation.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'bg-gray-50 text-indigo-600'
-                        : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600',
-                      'group flex gap-x-3 rounded-md py-2 pl-2 pr-3 text-sm/6 font-semibold',
-                    )}
-                  >
-                    <item.icon
-                      aria-hidden="true"
-                      className={classNames(
-                        item.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600',
-                        'size-6 shrink-0',
-                      )}
-                    />
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </aside>
+        <SidebarProfileNav />
 
         <main className="px-4 sm:px-6 lg:flex-auto lg:px-0">
           <div className="mx-auto max-w-2xl space-y-16 sm:space-y-20 lg:mx-0 lg:max-w-none">
