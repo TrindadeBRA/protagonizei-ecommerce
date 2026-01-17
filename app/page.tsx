@@ -1,10 +1,5 @@
 'use client'
 
-import MainMenu from "@/src/components/Layout/MainMenu/MainMenu";
-import Footer from "@/src/components/Layout/Footer/Footer";
-import CartProvider from "@/src/hooks/useCart";
-import CartDrawer from "@/src/components/Cart/CartDrawer";
-
 const favorites = [
   {
     id: 1,
@@ -35,9 +30,7 @@ const favorites = [
 
 export default function HomePage() {
   return (
-    <CartProvider>
-      <MainMenu />
-      <div className="bg-white">
+    <div className="bg-white">
         <header className="relative overflow-hidden">
           {/* Hero section */}
           <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
@@ -380,8 +373,5 @@ export default function HomePage() {
           </section>
         </main>
       </div>
-      <Footer />
-      <CartDrawer />
-    </CartProvider>
   )
 }
