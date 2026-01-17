@@ -177,11 +177,10 @@ export default function Example() {
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Summer styles are finally here
+                Histórias personalizadas onde seu filho é o protagonista
               </h1>
               <p className="mt-4 text-xl text-gray-500">
-                This year, our new summer collection will shelter you from the harsh elements of a world that doesn't
-                care if you live or die.
+                Transforme seu filho(a) no herói ou heroína de uma história mágica. Com nome, rosto e muita imaginação.
               </p>
             </div>
             <div>
@@ -256,7 +255,7 @@ export default function Example() {
                   href="#"
                   className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                 >
-                  Shop Collection
+                  Criar Livro Personalizado
                 </a>
               </div>
             </div>
@@ -270,10 +269,10 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
             <div className="sm:flex sm:items-baseline sm:justify-between">
               <h2 id="category-heading" className="text-2xl font-bold tracking-tight text-gray-900">
-                Shop by Category
+                Escolha por Categoria
               </h2>
               <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
-                Browse all categories
+                Ver todas as categorias
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
@@ -294,11 +293,11 @@ export default function Example() {
                     <h3 className="font-semibold text-white">
                       <a href="#">
                         <span className="absolute inset-0" />
-                        New Arrivals
+                        Novas Histórias
                       </a>
                     </h3>
                     <p aria-hidden="true" className="mt-1 text-sm text-white">
-                      Shop now
+                      Ver agora
                     </p>
                   </div>
                 </div>
@@ -318,11 +317,11 @@ export default function Example() {
                     <h3 className="font-semibold text-white">
                       <a href="#">
                         <span className="absolute inset-0" />
-                        Accessories
+                        Para Meninos
                       </a>
                     </h3>
                     <p aria-hidden="true" className="mt-1 text-sm text-white">
-                      Shop now
+                      Ver agora
                     </p>
                   </div>
                 </div>
@@ -342,11 +341,11 @@ export default function Example() {
                     <h3 className="font-semibold text-white">
                       <a href="#">
                         <span className="absolute inset-0" />
-                        Workspace
+                        Para Meninas
                       </a>
                     </h3>
                     <p aria-hidden="true" className="mt-1 text-sm text-white">
-                      Shop now
+                      Ver agora
                     </p>
                   </div>
                 </div>
@@ -355,7 +354,7 @@ export default function Example() {
 
             <div className="mt-6 sm:hidden">
               <a href="#" className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                Browse all categories
+                Ver todas as categorias
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
@@ -375,18 +374,17 @@ export default function Example() {
             <div aria-hidden="true" className="absolute inset-0 bg-gray-900/50" />
             <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
               <h2 id="cause-heading" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Long-term thinking
+                Cada criança é única
               </h2>
               <p className="mt-3 text-xl text-white">
-                We're committed to responsible, sustainable, and ethical manufacturing. Our small-scale approach allows
-                us to focus on quality and reduce our impact. We're doing our best to delay the inevitable heat-death of
-                the universe.
+                Acreditamos que cada criança merece ser protagonista de sua própria história. Criamos livros personalizados
+                que valorizam a identidade, a diversidade e o poder da imaginação infantil. Uma experiência mágica e emocional para toda a família.
               </p>
               <a
                 href="#"
                 className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
               >
-                Read our story
+                Conheça nossa história
               </a>
             </div>
           </div>
@@ -397,10 +395,10 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
             <div className="sm:flex sm:items-baseline sm:justify-between">
               <h2 id="favorites-heading" className="text-2xl font-bold tracking-tight text-gray-900">
-                Our Favorites
+                Mais Procurados
               </h2>
               <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
-                Browse all favorites
+                Ver todos os livros
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
@@ -426,7 +424,7 @@ export default function Example() {
 
             <div className="mt-6 sm:hidden">
               <a href="#" className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-                Browse all favorites
+                Ver todos os livros
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
@@ -441,13 +439,13 @@ export default function Example() {
                 <div className="relative pb-16 pt-48 sm:pb-24">
                   <div>
                     <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-                      Final Stock.
+                      Promoção Especial.
                       <br />
-                      Up to 50% off.
+                      Até 50% de desconto.
                     </h2>
                     <div className="mt-6 text-base">
                       <a href="#" className="font-semibold text-white">
-                        Shop the sale
+                        Ver ofertas
                         <span aria-hidden="true"> &rarr;</span>
                       </a>
                     </div>

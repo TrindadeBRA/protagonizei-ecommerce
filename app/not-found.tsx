@@ -24,14 +24,14 @@ export default function NotFoundPage() {
             <div className="max-w-lg">
               <p className="text-base/8 font-semibold text-indigo-600">404</p>
               <h1 className="mt-4 text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
-                Page not found
+                Página não encontrada
               </h1>
               <p className="mt-6 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                Sorry, we couldn’t find the page you’re looking for.
+                Desculpe, não conseguimos encontrar a página que você está procurando.
               </p>
               <div className="mt-10">
                 <a href="#" className="text-sm/7 font-semibold text-indigo-600">
-                  <span aria-hidden="true">&larr;</span> Back to home
+                  <span aria-hidden="true">&larr;</span> Voltar para início
                 </a>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function NotFoundPage() {
           <footer className="self-end lg:col-span-2 lg:col-start-1 lg:row-start-3">
             <div className="border-t border-gray-100 bg-gray-50 py-10">
               <nav className="mx-auto flex w-full max-w-7xl items-center gap-x-4 px-6 text-sm/7 text-gray-600 lg:px-8">
-                <a href="#">Contact support</a>
+                <a href="#">Entre em contato</a>
                 <svg viewBox="0 0 2 2" aria-hidden="true" className="size-0.5 fill-gray-300">
                   <circle r={1} cx={1} cy={1} />
                 </svg>

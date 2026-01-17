@@ -145,7 +145,7 @@ export default function MenuAuthenticated({ onToggleAuth }: MenuAuthenticatedPro
             </form>
 
             <p className="flex-1 text-center text-sm font-medium text-gray-900 lg:flex-none">
-              Get free delivery on orders over $100
+              Frete grátis em pedidos acima de R$ 100
             </p>
 
             <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">

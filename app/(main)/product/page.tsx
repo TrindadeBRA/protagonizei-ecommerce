@@ -17,63 +17,49 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
 
 const sortOptions = [
-  { name: 'Most Popular', href: '/product/XXX', current: true },
-  { name: 'Best Rating', href: '/product/XXX', current: false },
-  { name: 'Newest', href: '/product/XXX', current: false },
-  { name: 'Price: Low to High', href: '/product/XXX', current: false },
-  { name: 'Price: High to Low', href: '/product/XXX', current: false },
+  { name: 'Mais Popular', href: '/product/XXX', current: true },
+  { name: 'Melhor Avaliação', href: '/product/XXX', current: false },
+  { name: 'Mais Recente', href: '/product/XXX', current: false },
+  { name: 'Preço: Menor para Maior', href: '/product/XXX', current: false },
+  { name: 'Preço: Maior para Menor', href: '/product/XXX', current: false },
 ]
 const subCategories = [
-  { name: 'Totes', href: '/product/XXX' },
-  { name: 'Backpacks', href: '/product/XXX' },
-  { name: 'Travel Bags', href: '#' },
-  { name: 'Hip Bags', href: '/product/XXX' },
-  { name: 'Laptop Sleeves', href: '/product/XXX' },
+  { name: 'Aventura', href: '/product/XXX' },
+  { name: 'Fantasia', href: '/product/XXX' },
+  { name: 'Educativo', href: '#' },
+  { name: 'Clássicos', href: '/product/XXX' },
+  { name: 'Personalizados', href: '/product/XXX' },
 ]
 const filters = [
   {
-    id: 'color',
-    name: 'Color',
+    id: 'categoria',
+    name: 'Categoria',
     options: [
-      { value: 'white', label: 'White', checked: false },
-      { value: 'beige', label: 'Beige', checked: false },
-      { value: 'blue', label: 'Blue', checked: true },
-      { value: 'brown', label: 'Brown', checked: false },
-      { value: 'green', label: 'Green', checked: false },
-      { value: 'purple', label: 'Purple', checked: false },
+      { value: 'novos', label: 'Novos Lançamentos', checked: false },
+      { value: 'promocao', label: 'Promoção', checked: false },
+      { value: 'aventura', label: 'Aventura', checked: true },
+      { value: 'fantasia', label: 'Fantasia', checked: false },
+      { value: 'educativo', label: 'Educativo', checked: false },
     ],
   },
   {
-    id: 'category',
-    name: 'Category',
+    id: 'idade',
+    name: 'Idade',
     options: [
-      { value: 'new-arrivals', label: 'New Arrivals', checked: false },
-      { value: 'sale', label: 'Sale', checked: false },
-      { value: 'travel', label: 'Travel', checked: true },
-      { value: 'organization', label: 'Organization', checked: false },
-      { value: 'accessories', label: 'Accessories', checked: false },
-    ],
-  },
-  {
-    id: 'size',
-    name: 'Size',
-    options: [
-      { value: '2l', label: '2L', checked: false },
-      { value: '6l', label: '6L', checked: false },
-      { value: '12l', label: '12L', checked: false },
-      { value: '18l', label: '18L', checked: false },
-      { value: '20l', label: '20L', checked: false },
-      { value: '40l', label: '40L', checked: true },
+      { value: '2-4', label: '2 a 4 anos', checked: false },
+      { value: '5-7', label: '5 a 7 anos', checked: false },
+      { value: '8-10', label: '8 a 10 anos', checked: false },
+      { value: 'todas', label: 'Todas as idades', checked: true },
     ],
   },
 ]
 const products = [
   {
     id: 1,
-    name: 'Nomad Pouch',
+    name: 'A Aventura de João',
     href: '/product/XXX',
-    price: '$50',
-    availability: 'White and Black',
+    price: 'R$ 49,90',
+    availability: 'Para meninos e meninas',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-07-product-01.jpg',
     imageAlt: 'White fabric pouch with white zipper, black zipper pull, and black elastic loop.',
   },
@@ -166,7 +152,7 @@ export default function Example() {
               className="relative ml-auto flex size-full max-w-xs transform flex-col overflow-y-auto bg-white pb-6 pt-4 shadow-xl transition duration-300 ease-in-out data-[closed]:translate-x-full"
             >
               <div className="flex items-center justify-between px-4">
-                <h2 className="text-lg font-medium text-gray-900">Filters</h2>
+                <h2 className="text-lg font-medium text-gray-900">Filtros</h2>
                 <button
                   type="button"
                   onClick={() => setMobileFiltersOpen(false)}
@@ -180,7 +166,7 @@ export default function Example() {
 
               {/* Filters */}
               <form className="mt-4 border-t border-gray-200">
-                <h3 className="sr-only">Categories</h3>
+                <h3 className="sr-only">Categorias</h3>
                 <ul role="list" className="px-2 py-3 font-medium text-gray-900">
                   {subCategories.map((category) => (
                     <li key={category.name}>
@@ -257,12 +243,12 @@ export default function Example() {
 
         <main className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 sm:pt-12 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900">Novos Lançamentos</h1>
 
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
                 <MenuButton className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
-                  Sort
+                  Ordenar
                   <ChevronDownIcon
                     aria-hidden="true"
                     className="-mr-1 ml-1 size-5 shrink-0 text-gray-400 group-hover:text-gray-500"
@@ -292,7 +278,7 @@ export default function Example() {
               </Menu>
 
               <button type="button" className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
-                <span className="sr-only">View grid</span>
+                <span className="sr-only">Ver grade</span>
                 <Squares2X2Icon aria-hidden="true" className="size-5" />
               </button>
               <button
@@ -300,7 +286,7 @@ export default function Example() {
                 onClick={() => setMobileFiltersOpen(true)}
                 className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
               >
-                <span className="sr-only">Filters</span>
+                <span className="sr-only">Filtros</span>
                 <FunnelIcon aria-hidden="true" className="size-5" />
               </button>
             </div>
@@ -308,13 +294,13 @@ export default function Example() {
 
           <section aria-labelledby="products-heading" className="pb-24 pt-6">
             <h2 id="products-heading" className="sr-only">
-              Products
+              Produtos
             </h2>
 
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
               {/* Filters */}
               <form className="hidden lg:block">
-                <h3 className="sr-only">Categories</h3>
+                <h3 className="sr-only">Categorias</h3>
                 <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
                   {subCategories.map((category) => (
                     <li key={category.name}>

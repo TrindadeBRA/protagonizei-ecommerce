@@ -14,17 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Protagonizei - Sua Loja Online",
+    default: "Protagonizei - Livros Personalizados para Crianças",
     template: "%s | Protagonizei",
   },
-  description: "Protagonizei - Encontre os melhores produtos com os melhores preços. Frete grátis em pedidos acima de R$ 100.",
+  description: "Protagonizei - Histórias personalizadas onde o seu filho(a) é o protagonista. Com nome, rosto e magia. Entrega 100% digital.",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "https://protagonizei.com",
     siteName: "Protagonizei",
-    title: "Protagonizei - Sua Loja Online",
-    description: "Protagonizei - Encontre os melhores produtos com os melhores preços. Frete grátis em pedidos acima de R$ 100.",
+    title: "Protagonizei - Livros Personalizados para Crianças",
+    description: "Histórias personalizadas onde o seu filho(a) é o protagonista. Com nome, rosto e magia. Entrega 100% digital.",
     images: [
       {
         url: "/og-image.jpg",
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Protagonizei - Sua Loja Online",
-    description: "Protagonizei - Encontre os melhores produtos com os melhores preços.",
+    title: "Protagonizei - Livros Personalizados para Crianças",
+    description: "Histórias personalizadas onde o seu filho(a) é o protagonista. Com nome, rosto e magia.",
     images: ["/og-image.jpg"],
   },
 };
