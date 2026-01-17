@@ -6,7 +6,7 @@ import Footer from "@/src/components/Layout/Footer/Footer";
 import CartProvider from "@/src/hooks/useCart";
 import CartDrawer from "@/src/components/Cart/CartDrawer";
 
-export default function MainLayoutWrapper({
+export default function ClientLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -25,6 +25,6 @@ export default function MainLayoutWrapper({
       <Footer />
       <CartDrawer />
     </CartProvider>
-  )
+  );
 }
 
